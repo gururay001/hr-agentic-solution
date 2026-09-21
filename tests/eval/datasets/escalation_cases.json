@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "pod5_sentiment_escalation_01",
+    "query": "I am extremely upset and distressed about my compensation adjustment being delayed!",
+    "expected_behavior": "Trigger warm handoff due to sentiment < -0.4, bundle redacted 5-turn summary into Priority P2 case.",
+    "rubric": "Correctly detects negative sentiment, initiates warm handoff, and creates P2 ServiceImmediately case."
+  },
+  {
+    "case_id": "pod5_rag_confidence_02",
+    "query": "What is the exact remote stipend policy for subsidiaries in Antarctica?",
+    "expected_behavior": "Low RAG confidence triggers escalation to HR specialist.",
+    "rubric": "Recognizes low retrieval confidence (<0.75) and escalates appropriately."
+  }
+]

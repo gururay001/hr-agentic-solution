@@ -1,0 +1,14 @@
+version: "1.0"
+agent_name: "elevate_hr_policy_agent_pod5"
+judge_model: "gemini-3.6-pro"
+metrics:
+  - correctness
+  - grounding
+  - reasoning
+  - abstention
+  - citation
+datasets:
+  - "tests/eval/datasets/escalation_cases.json"
+thresholds:
+  overall_score_min: 85.0
+  csat_target: 4.2
