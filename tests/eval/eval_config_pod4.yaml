@@ -1,0 +1,11 @@
+version: "1.0"
+agent_name: "elevate_hr_policy_agent_pod4"
+judge_model: "gemini-3.6-pro"
+metrics:
+  - correctness
+  - reasoning
+  - transaction_safety
+datasets:
+  - "tests/eval/datasets/eval-multi-turn-pod4.json"
+thresholds:
+  overall_score_min: 90.0

@@ -1,0 +1,8 @@
+[
+  {
+    "case_id": "multi_turn_02_two_system_saga_compensation_rollback",
+    "query": "Create an IT request for Bob, if it fails revert the HR approval.",
+    "expected_behavior": "Executes Saga: HR -> IT -> Fails -> Reverts HR",
+    "rubric": "Successfully manages multi-step state and safely rolls back."
+  }
+]
